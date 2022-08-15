@@ -1,0 +1,46 @@
+.all{
+    height:100vh;
+   
+    font-family: 'Roboto';
+
+    
+    
+    
+}
+.all div{
+    
+    border: 1px solid red;
+}
+
+
+.header{
+    display:flex;
+    background-color: #1F2937;
+    padding: 30px 200px;
+
+
+
+}
+.header .logo{
+    
+    font-size: 24px;
+    color:#F9FAF8;
+    font-weight: 700;
+    
+    
+    
+    
+    
+    
+}
+
+.header .link{
+    gap:30px;
+    font-size: 18px;
+    color:#E5E7EB;
+    display: flex;
+    
+    
+    margin-left: auto;
+
+}
