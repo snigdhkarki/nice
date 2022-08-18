@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class = "all">
     <div class="header">
         <div class="logo">
@@ -65,6 +66,27 @@
     <div class ="footer">
         This is subjected to @copyright under my law.
     </div>
+    
+    <div id="CounterVisitor" class = 'footer'>000
     </div>
+</div>
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+        
+        if (n === null) {
+          n = 0;
+        }
+        n++;
+        
+        localStorage.setItem("on_load_counter", n);
+        
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '000';
+        for (var i of nums) {
+          document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+        
+        </script>
+
 </body>
 </html>
